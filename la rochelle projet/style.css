@@ -1,0 +1,83 @@
+/* este archivo crea directamente los cambios en el index de la rochelle color,tamano de la font letra */
+
+body{
+/* Aqui se prepara el color de fondo del sitio el color de las letras y la fuente/police */
+    font-size: 16px;
+    color: #000000;
+    background-color: #fff;
+    font-family: 'Fira Sans', sans serif;
+}
+.wrapper {
+max-width: 1000px;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+}
+
+#banner {
+    /*con estas lineas sse crea el color del banner de cabecera*/
+    background-color: rgb(236, 242, 52);
+    padding: 100px 0;
+}
+
+/*importante para todos nuestros projectos para que las fotos cambien automaticamente su tamano   RESPONSIVE
+*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* en estas lineas se maneja el tamano de todos los articulos y el espacio entre ellos
+*/
+
+article{
+
+    width: 30%;
+}
+
+#posts{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+/*align-items: center;*/
+/*hasta esta linea de arriba abarca los detalles del tamano de los articulos */ 
+}
+#posts h2 {
+    font-family: 'source serif 4 ',serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+
+}
+#posts p {
+margin: 10px 0;
+font-size: 16px;
+line-height: 30px;
+}
+#posts span{
+    font-weight: 700;
+}
+/* separa el titulo del parrafo y el parrafo mas abajo del savoir*/
+h2 {margin-bottom: 20px;
+    font-size: 150%;
+}
+p {
+    margin-bottom: 20px;
+   
+}
+/* cambia el margen de color,animation etc del boton Savoir + */
+#posts a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #517ef0;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(202, 221, 58);
+    line-height: 25px;
+    transition: background-color 0.3s ease, color 0.3s;
+    padding: 8px 45px;
+}
+#posts a:hover, 
+#posts a:focus {
+    color: #fff;
+    background-color: #2f3134;
+}
